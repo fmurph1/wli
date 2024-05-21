@@ -1,4 +1,4 @@
-Install Linux from Windows without a USB stick
+Install Linux from Windows without a USB stick:
 
 WARNING: This software is in alpha, and is not recommended for use on your main/critical PC.
 
