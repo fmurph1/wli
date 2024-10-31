@@ -1,5 +1,8 @@
 bcdedit -set TESTSIGNING OFF
-start %~dp0grub2win\G2WInstall.exe
+powershell -Command "Start-BitsTransfer -Source "https://sourceforge.net/projects/grub2win/files/grub2win.zip/download" -Destination "C:\grub2win.zip""
+cd C:\
+tar -xf grub2win.zip
+start C:\G2WInstall.exe
 echo Press any key after grub2win installation is complete.
 pause
 xcopy /i "%~dp0grub.cfg" "C:\grub2\grub.cfg" /Y
